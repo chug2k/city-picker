@@ -6,7 +6,7 @@ import { calculateOverallScore, sortCitiesByScore } from "@/lib/scoring";
 import citiesData from "@/data/cities.json";
 import { CategoryTooltip } from "@/components/CategoryTooltip";
 import { CriteriaRanking } from "@/components/CriteriaRanking";
-import { CriterionKey, CRITERIA_CONFIG, rankingToWeights } from "@/lib/criteria-config.tsx";
+import { CriterionKey, CRITERIA_CONFIG, rankingToWeights } from "@/lib/criteria-config";
 
 const DEFAULT_RANKING: CriterionKey[] = [
   "savings",

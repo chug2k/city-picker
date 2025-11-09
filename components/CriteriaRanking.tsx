@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, DragEvent } from "react";
-import { CriterionKey, CRITERIA_CONFIG } from "@/lib/criteria-config.tsx";
+import { CriterionKey, CRITERIA_CONFIG } from "@/lib/criteria-config";
 
 interface CriteriaRankingProps {
   orderedKeys: CriterionKey[];
