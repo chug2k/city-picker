@@ -1,0 +1,878 @@
+[
+  {
+  "name": "Ho Chi Minh City",
+  "timezoneOffset": -1,
+  "afterTaxIncome": 8500,
+  "monthlyCost": 2514,
+  "savings12Month": 71832,
+  "savings": {
+  "score": 10,
+  "notes": "Comfort basket for 2 adults + small dog: 85m² 2BR in expat area, utilities, home internet, weekly housekeeping (≈4h/wk), and 2× Numbeo single‑person spend ×1.15. Monthly cost ≈ $2,514; savings ≈ $5,986/mo ($71,832/yr).",
+  "sources": [
+  "https://www.expatistan.com/price/rent/ho-chi-minh-city/USD",
+  "https://www.expatistan.com/price/utilities/ho-chi-minh-city/USD",
+  "https://www.expatistan.com/price/internet/ho-chi-minh-city/USD",
+  "https://www.numbeo.com/cost-of-living/in/Ho-Chi-Minh-City"
+  ]
+  },
+  "timezoneOverlap": {
+  "score": 9,
+  "notes": "1 hour behind Singapore (UTC+7), providing excellent overlap with Asian business hours.",
+  "sources": []
+  },
+  "techVC": {
+  "score": 6,
+  "notes": "Growing tech hub with emerging startup ecosystem. Some VC activity but still developing. Southeast Asian tech companies expanding here.",
+  "sources": []
+  },
+  "climateAir": {
+  "score": 6,
+  "notes": "Tropical, hot and humid year-round. Air quality moderate with occasional pollution. 25-35°C most of the year.",
+  "sources": []
+  },
+  "expatFriendliness": {
+  "score": 8,
+  "notes": "Large expat community, especially digital nomads. English widely spoken in expat areas. Welcoming culture.",
+  "sources": []
+  },
+  "visaEase": {
+  "score": 7,
+  "notes": "Tourist visa easy, 90-day options available. Visa runs common for remote workers. Can be extended but not formal digital nomad visa yet.",
+  "sources": []
+  },
+  "dogImportEase": {
+  "score": 6,
+  "notes": "Moderate difficulty. Requires rabies vaccination, health certificate, microchip. Some breed restrictions. Quarantine possible.",
+  "sources": []
+  },
+  "veganFriendliness": {
+  "score": 7,
+  "notes": "Buddhist influence means lots of vegetarian options. Vegan food increasingly available in expat areas. Need to specify no fish sauce.",
+  "sources": []
+  }
+  },
+  {
+  "name": "Da Nang",
+  "timezoneOffset": -1,
+  "afterTaxIncome": 8500,
+  "monthlyCost": 1915,
+  "savings12Month": 79020,
+  "savings": {
+  "score": 10,
+  "notes": "Upper‑middle basket (2 adults + dog) totals ≈ $1,915/mo; savings ≈ $6,585/mo ($79,020/yr). Lower rent than HCMC with similar day‑to‑day costs.",
+  "sources": [
+  "https://www.expatistan.com/price/rent/da-nang/USD",
+  "https://www.expatistan.com/price/utilities/da-nang/USD",
+  "https://www.expatistan.com/price/internet/da-nang/USD",
+  "https://www.numbeo.com/cost-of-living/in/Da-Nang"
+  ]
+  },
+  "timezoneOverlap": {
+  "score": 9,
+  "notes": "1 hour behind Singapore (UTC+7), providing excellent overlap with Asian business hours.",
+  "sources": []
+  },
+  "techVC": {
+  "score": 4,
+  "notes": "Small but growing tech scene. More tourism-focused than tech. Some remote workers but limited startup ecosystem.",
+  "sources": []
+  },
+  "climateAir": {
+  "score": 8,
+  "notes": "Coastal tropical. Beach city with good air quality. Less pollution than HCMC. 24-35°C, typhoon season Aug-Nov.",
+  "sources": []
+  },
+  "expatFriendliness": {
+  "score": 7,
+  "notes": "Smaller but tight-knit expat community. Beach lifestyle attracts remote workers. Less English than HCMC.",
+  "sources": []
+  },
+  "visaEase": {
+  "score": 7,
+  "notes": "Same as Vietnam generally. Tourist visa easy, 90-day options. Digital nomad community growing but no official visa.",
+  "sources": []
+  },
+  "dogImportEase": {
+  "score": 6,
+  "notes": "Same as HCMC. Moderate difficulty with standard Vietnam pet import requirements.",
+  "sources": []
+  },
+  "veganFriendliness": {
+  "score": 6,
+  "notes": "Less developed than HCMC but growing. Buddhist vegetarian restaurants available. Limited Western vegan options.",
+  "sources": []
+  }
+  },
+  {
+  "name": "Chiang Mai",
+  "timezoneOffset": -1,
+  "afterTaxIncome": 8500,
+  "monthlyCost": 2322,
+  "savings12Month": 74136,
+  "savings": {
+  "score": 10,
+  "notes": "Comfort basket (incl. nice 2BR in Nimman/Old City standard) ≈ $2,322/mo; savings ≈ $6,178/mo ($74,136/yr).",
+  "sources": [
+  "https://www.numbeo.com/cost-of-living/in/Chiang-Mai",
+  "https://www.expatistan.com/price/rent-normal-area/chiang-mai/USD",
+  "https://66property.com/property-list/2-bedroom-apartments-for-rent/",
+  "https://www.expatistan.com/cost-of-living/chiang-mai"
+  ]
+  },
+  "timezoneOverlap": {
+  "score": 9,
+  "notes": "1 hour behind Singapore (UTC+7), providing excellent overlap with Asian business hours.",
+  "sources": []
+  },
+  "techVC": {
+  "score": 5,
+  "notes": "Famous digital nomad hub with coworking spaces and tech community. Small local startup scene. More remote workers than VCs.",
+  "sources": []
+  },
+  "climateAir": {
+  "score": 6,
+  "notes": "Tropical savanna. Cooler than Bangkok. Air quality issues Feb-April (burning season). Pleasant Nov-Feb. 15-35°C.",
+  "sources": []
+  },
+  "expatFriendliness": {
+  "score": 10,
+  "notes": "Huge digital nomad and expat community. English widely spoken. Very welcoming and established infrastructure.",
+  "sources": []
+  },
+  "visaEase": {
+  "score": 7,
+  "notes": "Tourist visa 60 days, can extend. ED visas common. No digital nomad visa but visa runs established practice.",
+  "sources": []
+  },
+  "dogImportEase": {
+  "score": 7,
+  "notes": "Moderate. Thailand requires rabies vaccination, health certificate, import permit. Easier than many countries.",
+  "sources": []
+  },
+  "veganFriendliness": {
+  "score": 9,
+  "notes": "Excellent vegan scene. Many vegan restaurants and cafes. Buddhist culture supports plant-based eating. Well-labeled options.",
+  "sources": []
+  }
+  },
+  {
+  "name": "Kuala Lumpur",
+  "timezoneOffset": 0,
+  "afterTaxIncome": 8500,
+  "monthlyCost": 2511,
+  "savings12Month": 71868,
+  "savings": {
+  "score": 10,
+  "notes": "Comfort basket ≈ $2,511/mo; savings ≈ $5,989/mo ($71,868/yr). Attractive rent-to-income with DE Rantau availability.",
+  "sources": [
+  "https://www.numbeo.com/cost-of-living/in/Kuala-Lumpur",
+  "https://www.expatistan.com/price/rent/kuala-lumpur/USD",
+  "https://www.expatistan.com/price/utilities/kuala-lumpur/USD",
+  "https://www.expatistan.com/price/internet/kuala-lumpur/USD"
+  ]
+  },
+  "timezoneOverlap": {
+  "score": 10,
+  "notes": "Same timezone as Singapore (UTC+8), perfect overlap with Asian business hours.",
+  "sources": []
+  },
+  "techVC": {
+  "score": 7,
+  "notes": "Growing Southeast Asian tech hub. Grab, Carsome, and other unicorns based here. Government support for startups. VC activity increasing.",
+  "sources": []
+  },
+  "climateAir": {
+  "score": 7,
+  "notes": "Tropical rainforest. Hot and humid year-round with frequent rain. Air quality generally good. 23-33°C consistently.",
+  "sources": []
+  },
+  "expatFriendliness": {
+  "score": 9,
+  "notes": "Very expat-friendly. English widely spoken. Multicultural city. Good infrastructure for foreigners.",
+  "sources": []
+  },
+  "visaEase": {
+  "score": 8,
+  "notes": "90-day tourist visa free for many countries. DE Rantau digital nomad visa available (12-24 months). Relatively easy.",
+  "sources": []
+  },
+  "dogImportEase": {
+  "score": 6,
+  "notes": "Moderate. Malaysia requires import permit, rabies vaccination, health certificate. More bureaucratic than some neighbors.",
+  "sources": []
+  },
+  "veganFriendliness": {
+  "score": 7,
+  "notes": "Growing vegan scene especially in expat areas. Indian vegetarian restaurants common. Chinese Buddhist vegetarian available.",
+  "sources": []
+  }
+  },
+  {
+  "name": "Zagreb",
+  "timezoneOffset": -7,
+  "afterTaxIncome": 7500,
+  "monthlyCost": 3611,
+  "savings12Month": 46668,
+  "savings": {
+  "score": 9,
+  "notes": "Comfort basket ≈ $3,611/mo; savings ≈ $3,889/mo ($46,668/yr).",
+  "sources": [
+  "https://www.numbeo.com/cost-of-living/in/Zagreb",
+  "https://www.expatistan.com/price/rent/zagreb-croatia/USD",
+  "https://www.expatistan.com/price/utilities/zagreb-croatia/USD",
+  "https://www.expatistan.com/price/internet-connection/zagreb-croatia/USD"
+  ]
+  },
+  "timezoneOverlap": {
+  "score": 3,
+  "notes": "7 hours behind Singapore (UTC+1), limited overlap with Asian business hours.",
+  "sources": []
+  },
+  "techVC": {
+  "score": 5,
+  "notes": "Small but growing tech scene. Some startups emerging. Limited VC compared to Western Europe. Remote work culture growing.",
+  "sources": []
+  },
+  "climateAir": {
+  "score": 7,
+  "notes": "Continental. Cold winters (-5 to 5°C), warm summers (20-28°C). Good air quality. Four distinct seasons.",
+  "sources": []
+  },
+  "expatFriendliness": {
+  "score": 7,
+  "notes": "Smaller expat community but growing. English spoken by younger people. Affordable EU capital. Welcoming culture.",
+  "sources": []
+  },
+  "visaEase": {
+  "score": 7,
+  "notes": "EU citizens easy. Non-EU get 90 days visa-free Schengen. Digital nomad visa available (up to 1 year).",
+  "sources": []
+  },
+  "dogImportEase": {
+  "score": 8,
+  "notes": "Easy for EU pet passport. Non-EU requires rabies vaccination, microchip, health certificate. EU standards apply.",
+  "sources": []
+  },
+  "veganFriendliness": {
+  "score": 6,
+  "notes": "Growing vegan scene in capital. Several vegan restaurants. Traditional cuisine is meat-heavy but options increasing.",
+  "sources": []
+  }
+  },
+  {
+  "name": "Ljubljana",
+  "timezoneOffset": -7,
+  "afterTaxIncome": 7500,
+  "monthlyCost": 4031,
+  "savings12Month": 41628,
+  "savings": {
+  "score": 8,
+  "notes": "Comfort basket ≈ $4,031/mo; savings ≈ $3,469/mo ($41,628/yr).",
+  "sources": [
+  "https://www.numbeo.com/cost-of-living/in/Ljubljana",
+  "https://www.expatistan.com/price/rent/ljubljana/USD",
+  "https://www.expatistan.com/price/utilities/ljubljana/USD",
+  "https://www.expatistan.com/price/internet/ljubljana/USD"
+  ]
+  },
+  "timezoneOverlap": {
+  "score": 3,
+  "notes": "7 hours behind Singapore (UTC+1), limited overlap with Asian business hours.",
+  "sources": []
+  },
+  "techVC": {
+  "score": 4,
+  "notes": "Small tech scene. Some startups but very limited VC activity. Beautiful quality of life city, less business-focused.",
+  "sources": []
+  },
+  "climateAir": {
+  "score": 9,
+  "notes": "Continental. Cold winters, warm summers. Excellent air quality. Green city. -2 to 25°C seasonal variation.",
+  "sources": []
+  },
+  "expatFriendliness": {
+  "score": 7,
+  "notes": "Small, welcoming expat community. Smaller than Zagreb. English widely spoken. High quality of life.",
+  "sources": []
+  },
+  "visaEase": {
+  "score": 7,
+  "notes": "EU citizens easy. Non-EU 90 days Schengen visa-free. Digital nomad visa available but small city may not attract many.",
+  "sources": []
+  },
+  "dogImportEase": {
+  "score": 8,
+  "notes": "Same as EU standards. Easy with EU pet passport. Non-EU requires standard EU documentation.",
+  "sources": []
+  },
+  "veganFriendliness": {
+  "score": 7,
+  "notes": "Good vegan options for city size. Progressive food culture. Farmers markets. Several dedicated vegan spots.",
+  "sources": []
+  }
+  },
+  {
+  "name": "Lisbon",
+  "timezoneOffset": -8,
+  "afterTaxIncome": 7500,
+  "monthlyCost": 4087,
+  "savings12Month": 40956,
+  "savings": {
+  "score": 8,
+  "notes": "Comfort basket ≈ $4,087/mo; savings ≈ $3,413/mo ($40,956/yr). High rents in central neighborhoods drive costs.",
+  "sources": [
+  "https://www.numbeo.com/cost-of-living/in/Lisbon",
+  "https://www.expatistan.com/price/rent/lisbon/USD",
+  "https://www.expatistan.com/price/utilities/lisbon/USD",
+  "https://www.expatistan.com/price/internet/lisbon/USD"
+  ]
+  },
+  "timezoneOverlap": {
+  "score": 2,
+  "notes": "8 hours behind Singapore (UTC+0), poor overlap with Asian business hours.",
+  "sources": []
+  },
+  "techVC": {
+  "score": 9,
+  "notes": "Major European tech hub. Unicorns like Talkdesk, Farfetch. Web Summit headquarters. Strong VC presence. Growing ecosystem.",
+  "sources": []
+  },
+  "climateAir": {
+  "score": 9,
+  "notes": "Mediterranean. Mild winters (8-15°C), warm dry summers (17-28°C). Excellent air quality. Sunny year-round.",
+  "sources": []
+  },
+  "expatFriendliness": {
+  "score": 9,
+  "notes": "Huge expat and digital nomad community. English widely spoken. Very welcoming. Established infrastructure.",
+  "sources": []
+  },
+  "visaEase": {
+  "score": 8,
+  "notes": "EU citizens easy. Non-EU get 90 days Schengen. Digital nomad visa available. D7 passive income visa popular with remote workers.",
+  "sources": []
+  },
+  "dogImportEase": {
+  "score": 8,
+  "notes": "EU pet passport makes it easy. Non-EU requires standard EU requirements. Pet-friendly culture.",
+  "sources": []
+  },
+  "veganFriendliness": {
+  "score": 8,
+  "notes": "Excellent and growing vegan scene. Many restaurants. Vegetarian festival. Progressive food culture.",
+  "sources": []
+  }
+  },
+  {
+  "name": "Taipei",
+  "timezoneOffset": 0,
+  "afterTaxIncome": 8500,
+  "monthlyCost": 4102,
+  "savings12Month": 52776,
+  "savings": {
+  "score": 9,
+  "notes": "Comfort basket ≈ $4,102/mo; savings ≈ $4,398/mo ($52,776/yr). Rent in central districts is the main driver.",
+  "sources": [
+  "https://www.numbeo.com/cost-of-living/in/Taipei",
+  "https://www.expatistan.com/price/rent/taipei/USD",
+  "https://expatistan.com/price/internet-connection/taipei/USD",
+  "https://www.expatistan.com/price/utilities/taipei/USD"
+  ]
+  },
+  "timezoneOverlap": {
+  "score": 10,
+  "notes": "Same timezone as Singapore (UTC+8), perfect overlap with Asian business hours.",
+  "sources": []
+  },
+  "techVC": {
+  "score": 9,
+  "notes": "Major tech hub. TSMC and hardware giants. Growing software startup scene. Strong VC presence. Innovation-driven economy.",
+  "sources": []
+  },
+  "climateAir": {
+  "score": 7,
+  "notes": "Subtropical. Hot humid summers, mild winters. Typhoon season. Air quality generally good. 15-33°C range.",
+  "sources": []
+  },
+  "expatFriendliness": {
+  "score": 6,
+  "notes": "Moderate expat community. English less common than other Asian cities. Safe and high quality of life. Healthcare excellent.",
+  "sources": []
+  },
+  "visaEase": {
+  "score": 6,
+  "notes": "90 days visa-free for many countries. Gold Card for skilled workers (3 years). Plum Blossom Card. Remote work becoming easier.",
+  "sources": []
+  },
+  "dogImportEase": {
+  "score": 6,
+  "notes": "Moderate. Requires rabies vaccination, microchip, health certificate, quarantine possible. Pet-friendly city once approved.",
+  "sources": []
+  },
+  "veganFriendliness": {
+  "score": 9,
+  "notes": "Excellent vegan options. Buddhist vegetarian restaurants everywhere. HappyCow well-rated. Easy to find vegan food.",
+  "sources": []
+  }
+  },
+  {
+  "name": "Seoul",
+  "timezoneOffset": 1,
+  "afterTaxIncome": 9000,
+  "monthlyCost": 5427,
+  "savings12Month": 42876,
+  "savings": {
+  "score": 7,
+  "notes": "Comfort basket ≈ $5,427/mo; savings ≈ $3,573/mo ($42,876/yr). High central rents and costlier day‑to‑day spend.",
+  "sources": [
+  "https://www.numbeo.com/cost-of-living/in/Seoul",
+  "https://www.expatistan.com/price/rent/seoul/USD",
+  "https://www.expatistan.com/price/utilities/seoul/USD",
+  "https://expatistan.com/price/internet-connection/seoul"
+  ]
+  },
+  "timezoneOverlap": {
+  "score": 9,
+  "notes": "1 hour ahead of Singapore (UTC+9), excellent overlap with Asian business hours.",
+  "sources": []
+  },
+  "techVC": {
+  "score": 10,
+  "notes": "Major global tech hub. Samsung, Naver, Kakao, Coupang. Massive VC activity. Government support for startups. Highly competitive.",
+  "sources": []
+  },
+  "climateAir": {
+  "score": 6,
+  "notes": "Continental. Cold winters (-6 to 3°C), hot humid summers (23-30°C). Air quality concerns especially spring. Four seasons.",
+  "sources": []
+  },
+  "expatFriendliness": {
+  "score": 5,
+  "notes": "Growing expat community but can be challenging. English less common. High cost of living. Advanced infrastructure.",
+  "sources": []
+  },
+  "visaEase": {
+  "score": 5,
+  "notes": "90 days visa-free for many countries. D-8 business visa. F-visa for long-term. Work visa requires sponsorship. Competitive.",
+  "sources": []
+  },
+  "dogImportEase": {
+  "score": 5,
+  "notes": "Moderate to difficult. Strict quarantine requirements. Extensive paperwork. Import permits required. Can take months to arrange.",
+  "sources": []
+  },
+  "veganFriendliness": {
+  "score": 7,
+  "notes": "Growing vegan scene in Seoul. Buddhist temple food tradition. Korean cuisine uses fish sauce/shrimp paste but alternatives emerging.",
+  "sources": []
+  }
+  },
+  {
+  "name": "Singapore",
+  "timezoneOffset": 0,
+  "afterTaxIncome": 10000,
+  "monthlyCost": 8395,
+  "savings12Month": 19260,
+  "savings": {
+  "score": 5,
+  "notes": "Comfort basket ≈ $8,395/mo (notably high 2BR rents); savings ≈ $1,605/mo ($19,260/yr).",
+  "sources": [
+  "https://www.numbeo.com/cost-of-living/in/Singapore",
+  "https://www.expatistan.com/price/rent/singapore/USD",
+  "https://www.expatistan.com/price/utilities/singapore/USD",
+  "https://www.expatistan.com/price/internet/singapore/USD"
+  ]
+  },
+  "timezoneOverlap": {
+  "score": 10,
+  "notes": "Base timezone (UTC+8), perfect for Asian business hours.",
+  "sources": []
+  },
+  "techVC": {
+  "score": 10,
+  "notes": "Top global tech and VC hub. Grab, Sea, Shopee unicorns. Massive VC presence. Government support. Financial center.",
+  "sources": []
+  },
+  "climateAir": {
+  "score": 8,
+  "notes": "Tropical. Hot and humid year-round. Excellent air quality. No natural disasters. 25-32°C consistently.",
+  "sources": []
+  },
+  "expatFriendliness": {
+  "score": 10,
+  "notes": "Huge expat community. English official language. Extremely expat-friendly infrastructure. High quality of life.",
+  "sources": []
+  },
+  "visaEase": {
+  "score": 7,
+  "notes": "30-90 days visa-free depending on passport. Tech.Pass and Employment Pass available. Entrepreneur Pass. Competitive but accessible.",
+  "sources": []
+  },
+  "dogImportEase": {
+  "score": 7,
+  "notes": "Moderate to easy. Requires import permit, rabies vaccination, microchip. Some breeds banned. Generally smooth process.",
+  "sources": []
+  },
+  "veganFriendliness": {
+  "score": 8,
+  "notes": "Excellent vegan scene. Multicultural food options. Indian vegetarian common. Chinese Buddhist vegetarian. Many vegan restaurants.",
+  "sources": []
+  }
+  },
+  {
+  "name": "Austin",
+  "timezoneOffset": -14,
+  "afterTaxIncome": 12000,
+  "monthlyCost": 6172,
+  "savings12Month": 69936,
+  "savings": {
+  "score": 8,
+  "notes": "Comfort basket ≈ $6,172/mo; savings ≈ $5,828/mo ($69,936/yr).",
+  "sources": [
+  "https://www.numbeo.com/cost-of-living/in/Austin",
+  "https://www.expatistan.com/price/rent/austin",
+  "https://www.expatistan.com/price/utilities/austin/USD",
+  "https://www.expatistan.com/price/internet/austin/USD"
+  ]
+  },
+  "timezoneOverlap": {
+  "score": 1,
+  "notes": "14 hours behind Singapore (UTC-6), minimal overlap with Asian business hours.",
+  "sources": []
+  },
+  "techVC": {
+  "score": 9,
+  "notes": "Major US tech hub. Tesla, Oracle HQs. Apple major presence. Strong VC activity. Startup scene. Lower cost than SF/NYC.",
+  "sources": []
+  },
+  "climateAir": {
+  "score": 7,
+  "notes": "Humid subtropical. Hot summers (30-38°C), mild winters (8-18°C). Good air quality. Can be very hot Jun-Sep.",
+  "sources": []
+  },
+  "expatFriendliness": {
+  "score": 8,
+  "notes": "Friendly Southern culture. Large domestic and international transplant community. English speaking. Car dependent.",
+  "sources": []
+  },
+  "visaEase": {
+  "score": 4,
+  "notes": "Tourist visa (ESTA/B1/B2) up to 6 months. Work visa requires sponsorship (H1B very competitive). Remote work on tourist visa gray area.",
+  "sources": []
+  },
+  "dogImportEase": {
+  "score": 9,
+  "notes": "Easy. US pet import straightforward. Rabies vaccination required. Health certificate. No quarantine for most countries.",
+  "sources": []
+  },
+  "veganFriendliness": {
+  "score": 8,
+  "notes": "Great vegan scene. Progressive food culture. Many vegan restaurants and options. HEB has plant-based sections.",
+  "sources": []
+  }
+  },
+  {
+  "name": "Seattle",
+  "timezoneOffset": -16,
+  "afterTaxIncome": 13000,
+  "monthlyCost": 8644,
+  "savings12Month": 52272,
+  "savings": {
+  "score": 7,
+  "notes": "Comfort basket ≈ $8,644/mo; savings ≈ $4,356/mo ($52,272/yr). Rent in desirable neighborhoods is the main driver.",
+  "sources": [
+  "https://www.numbeo.com/cost-of-living/in/Seattle",
+  "https://www.expatistan.com/price/rent/seattle",
+  "https://www.expatistan.com/cost-of-living/seattle"
+  ]
+  },
+  "timezoneOverlap": {
+  "score": 0,
+  "notes": "16 hours behind Singapore (UTC-8), no practical overlap with Asian business hours.",
+  "sources": []
+  },
+  "techVC": {
+  "score": 9,
+  "notes": "Major tech hub. Amazon and Microsoft HQs. Strong startup scene. Significant VC presence. Tech talent density high.",
+  "sources": []
+  },
+  "climateAir": {
+  "score": 8,
+  "notes": "Oceanic. Mild wet winters (2-10°C), warm dry summers (15-26°C). Cloudy/rainy reputation but good air quality. Beautiful summers.",
+  "sources": []
+  },
+  "expatFriendliness": {
+  "score": 7,
+  "notes": "Professional expat community. English speaking. Can be socially reserved (Seattle Freeze). High cost of living.",
+  "sources": []
+  },
+  "visaEase": {
+  "score": 4,
+  "notes": "Same as US generally. Tourist visa straightforward but work visa very competitive. Remote work on tourist visa risky.",
+  "sources": []
+  },
+  "dogImportEase": {
+  "score": 9,
+  "notes": "Easy. Same as US standards. Simple pet import process. Dog-friendly city culture.",
+  "sources": []
+  },
+  "veganFriendliness": {
+  "score": 9,
+  "notes": "Excellent vegan scene. Progressive Pacific Northwest culture. Many vegan restaurants. Whole Foods, PCC markets well-stocked.",
+  "sources": []
+  }
+  },
+  {
+  "name": "Brooklyn (NYC)",
+  "timezoneOffset": -13,
+  "afterTaxIncome": 14000,
+  "monthlyCost": 10984,
+  "savings12Month": 36192,
+  "savings": {
+  "score": 6,
+  "notes": "Comfort basket ≈ $10,984/mo; savings ≈ $3,016/mo ($36,192/yr). Brooklyn 2BR rents in expat/family‑friendly areas are very high.",
+  "sources": [
+  "https://www.numbeo.com/cost-of-living/in/New-York",
+  "https://www.expatistan.com/price/rent/new-york-city",
+  "https://www.expatistan.com/cost-of-living/new-york-city"
+  ]
+  },
+  "timezoneOverlap": {
+  "score": 1,
+  "notes": "13 hours behind Singapore (UTC-5), minimal overlap with Asian business hours.",
+  "sources": []
+  },
+  "techVC": {
+  "score": 10,
+  "notes": "Major global VC hub. Tech companies expanding here. Strong startup scene. Massive financial and tech presence.",
+  "sources": []
+  },
+  "climateAir": {
+  "score": 6,
+  "notes": "Humid continental. Cold winters (-3 to 4°C), hot humid summers (22-29°C). Moderate air quality. Four distinct seasons.",
+  "sources": []
+  },
+  "expatFriendliness": {
+  "score": 8,
+  "notes": "Huge international community. Every culture represented. English speaking. Very expensive. Fast-paced.",
+  "sources": []
+  },
+  "visaEase": {
+  "score": 4,
+  "notes": "Same as US. Tourist visa accessible but work visa competitive. Remote work on tourist visa not advisable.",
+  "sources": []
+  },
+  "dogImportEase": {
+  "score": 9,
+  "notes": "Easy. US pet import standards. Dog-friendly borough. Many dog parks and services.",
+  "sources": []
+  },
+  "veganFriendliness": {
+  "score": 10,
+  "notes": "World-class vegan scene. Hundreds of vegan restaurants. Every cuisine has vegan options. Vegan grocery stores. Cutting edge.",
+  "sources": []
+  }
+  },
+  {
+  "name": "Tokyo",
+  "timezoneOffset": 1,
+  "afterTaxIncome": 10000,
+  "monthlyCost": 5789,
+  "savings12Month": 50532,
+  "savings": {
+  "score": 8,
+  "notes": "Comfort basket ≈ $5,789/mo; savings ≈ $4,211/mo ($50,532/yr). Central 2BR rents are the key driver.",
+  "sources": [
+  "https://www.numbeo.com/cost-of-living/in/Tokyo",
+  "https://www.expatistan.com/price/rent/tokyo/USD",
+  "https://www.expatistan.com/cost-of-living/tokyo"
+  ]
+  },
+  "timezoneOverlap": {
+  "score": 9,
+  "notes": "1 hour ahead of Singapore (UTC+9), excellent overlap with Asian business hours.",
+  "sources": []
+  },
+  "techVC": {
+  "score": 9,
+  "notes": "Major global tech hub. Sony, Rakuten, SoftBank. Strong VC activity especially SoftBank Vision Fund. Innovation culture.",
+  "sources": []
+  },
+  "climateAir": {
+  "score": 7,
+  "notes": "Humid subtropical. Cold winters (1-10°C), hot humid summers (24-32°C). Generally good air quality. Typhoons possible.",
+  "sources": []
+  },
+  "expatFriendliness": {
+  "score": 5,
+  "notes": "Growing expat community. English less common. Excellent infrastructure and safety. Can be isolating. High quality of life.",
+  "sources": []
+  },
+  "visaEase": {
+  "score": 5,
+  "notes": "Tourist visa 90 days. Work visa requires sponsorship. Startup visa available in some wards. Somewhat bureaucratic.",
+  "sources": []
+  },
+  "dogImportEase": {
+  "score": 5,
+  "notes": "Moderate to difficult. Requires microchip, rabies vaccination, health certificates, possible quarantine. Strict paperwork.",
+  "sources": []
+  },
+  "veganFriendliness": {
+  "score": 7,
+  "notes": "Growing vegan scene. Buddhist shojin ryori tradition. Need to watch for dashi (fish stock). Apps help find options. Improving rapidly.",
+  "sources": []
+  }
+  },
+  {
+  "name": "Perth",
+  "timezoneOffset": 0,
+  "afterTaxIncome": 11000,
+  "monthlyCost": 4846,
+  "savings12Month": 73848,
+  "savings": {
+  "score": 9,
+  "notes": "Comfort basket ≈ $4,846/mo; savings ≈ $6,154/mo ($73,848/yr).",
+  "sources": [
+  "https://www.numbeo.com/cost-of-living/in/Perth",
+  "https://www.expatistan.com/cost-of-living/perth"
+  ]
+  },
+  "timezoneOverlap": {
+  "score": 10,
+  "notes": "Same timezone as Singapore (UTC+8), perfect overlap with Asian business hours.",
+  "sources": []
+  },
+  "techVC": {
+  "score": 4,
+  "notes": "Small tech scene. Mining tech focus. Limited VC compared to Sydney/Melbourne. Remote from other markets. Some startups.",
+  "sources": []
+  },
+  "climateAir": {
+  "score": 10,
+  "notes": "Mediterranean. Hot dry summers (17-32°C), mild winters (8-19°C). Excellent air quality. Sunny most of year. Beautiful weather.",
+  "sources": []
+  },
+  "expatFriendliness": {
+  "score": 7,
+  "notes": "Moderate expat community. English speaking. Isolated location. High quality of life. Expensive. Relaxed culture.",
+  "sources": []
+  },
+  "visaEase": {
+  "score": 5,
+  "notes": "Tourist visa 90 days (ETA). Work visa competitive. Skilled migration possible. Working holiday visa for some countries. Regional visa options.",
+  "sources": []
+  },
+  "dogImportEase": {
+  "score": 3,
+  "notes": "Difficult. Australia has strict quarantine (minimum 10 days). Extensive paperwork. Expensive. Among world's strictest.",
+  "sources": []
+  },
+  "veganFriendliness": {
+  "score": 8,
+  "notes": "Good vegan scene for city size. Australian cities generally vegan-friendly. Health-conscious culture. Cafe culture supports plant-based.",
+  "sources": []
+  }
+  },
+  {
+  "name": "Hong Kong",
+  "timezoneOffset": 0,
+  "afterTaxIncome": 11000,
+  "monthlyCost": 9332,
+  "savings12Month": 20016,
+  "savings": {
+  "score": 5,
+  "notes": "Comfort basket ≈ $9,332/mo; savings ≈ $1,668/mo ($20,016/yr). Housing dominates spend.",
+  "sources": [
+  "https://www.numbeo.com/cost-of-living/in/Hong-Kong",
+  "https://www.expatistan.com/price/rent/hong-kong/USD",
+  "https://www.expatistan.com/cost-of-living/hong-kong"
+  ]
+  },
+  "timezoneOverlap": {
+  "score": 10,
+  "notes": "Same timezone as Singapore (UTC+8), perfect overlap with Asian business hours.",
+  "sources": []
+  },
+  "techVC": {
+  "score": 8,
+  "notes": "Major Asian tech and finance hub. Growing startup scene. Significant VC activity. Gateway to China. Competitive environment.",
+  "sources": []
+  },
+  "climateAir": {
+  "score": 6,
+  "notes": "Subtropical. Hot humid summers (26-33°C), mild winters (14-20°C). High humidity. Air quality variable. Typhoons Jun-Oct.",
+  "sources": []
+  },
+  "expatFriendliness": {
+  "score": 8,
+  "notes": "Large expat community. English widely spoken. International city. Very expensive. Small living spaces. Fast-paced.",
+  "sources": []
+  },
+  "visaEase": {
+  "score": 6,
+  "notes": "Tourist visa 90-180 days depending on passport. Work visa requires sponsorship. Startup visa available. Competitive.",
+  "sources": []
+  },
+  "dogImportEase": {
+  "score": 6,
+  "notes": "Moderate. Requires import permit, rabies vaccination, microchip, blood test. No quarantine if requirements met. Relatively smooth.",
+  "sources": []
+  },
+  "veganFriendliness": {
+  "score": 8,
+  "notes": "Excellent vegan scene. Buddhist vegetarian restaurants common. Growing Western vegan options. Easy to find plant-based food.",
+  "sources": []
+  }
+  },
+  {
+  "name": "Shanghai",
+  "timezoneOffset": 0,
+  "afterTaxIncome": 10000,
+  "monthlyCost": 3850,
+  "savings12Month": 73800,
+  "savings": {
+  "score": 10,
+  "notes": "Comfort basket ≈ $3,850/mo; savings ≈ $6,150/mo ($73,800/yr).",
+  "sources": [
+  "https://www.numbeo.com/cost-of-living/in/Shanghai",
+  "https://www.expatistan.com/cost-of-living/shanghai"
+  ]
+  },
+  "timezoneOverlap": {
+  "score": 10,
+  "notes": "Same timezone as Singapore (UTC+8), perfect overlap with Asian business hours.",
+  "sources": []
+  },
+  "techVC": {
+  "score": 8,
+  "notes": "Major Chinese tech hub. Alibaba presence, many unicorns. Massive VC activity. Innovation focused but shifting landscape recently.",
+  "sources": []
+  },
+  "climateAir": {
+  "score": 5,
+  "notes": "Subtropical. Hot humid summers (24-32°C), cold damp winters (1-8°C). Air quality concerns, improving. Four seasons.",
+  "sources": []
+  },
+  "expatFriendliness": {
+  "score": 5,
+  "notes": "Large expat community but declining. English less common. Great firewall affects work. Cost of living rising. Infrastructure excellent.",
+  "sources": []
+  },
+  "visaEase": {
+  "score": 4,
+  "notes": "Tourist visa 15-30 days (visa-free transit). Work visa requires employer sponsorship. More complex visa situation currently.",
+  "sources": []
+  },
+  "dogImportEase": {
+  "score": 5,
+  "notes": "Moderate to difficult. Requires extensive paperwork, quarantine likely (30 days possible). Import permit needed. Bureaucratic process.",
+  "sources": []
+  },
+  "veganFriendliness": {
+  "score": 7,
+  "notes": "Buddhist vegetarian tradition. Growing vegan scene in expat areas. Need to navigate language barrier. Temple food options.",
+  "sources": []
+  }
+  }
+  ]
