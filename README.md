@@ -1,5 +1,7 @@
 # City Picker
 
+[Open City Picker](https://clpanic.com/city-picker/)
+
 Compare 17 cities for remote work. Enter an annual salary in USD and drag the eight priorities into your preferred order. The browser remembers your salary, priority order and hidden cities.
 
 ## How the estimates work
@@ -29,3 +31,5 @@ npm test
 ```
 
 The tests start a local server. Set `CITY_PICKER_URL` to a running site's full entry URL, including its trailing slash, to test a deployed copy. `npm run lint` and `npm run build` check the source and production build.
+
+GitHub Pages serves the root of the `gh-pages` branch. To reproduce the release from `main`, run `CITY_PICKER_PAGES=1 npm run build` and serve `out/` at `/city-picker/`. A Pages release commits the contents of `out/` and an empty `.nojekyll` file to `gh-pages`. The optional Gemini API route runs only in the server build.
