@@ -1,8 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { CityData, ScoringWeights } from "@/types/city";
-import { calculateOverallScore, sortCitiesByScore } from "@/lib/scoring";
+import { useState } from "react";
+import { BASELINE_SALARY, calculateOverallScore, estimateCities } from "@/lib/scoring";
+import { useStoredPreference } from "@/lib/use-stored-preference";
 import citiesData from "@/data/cities.json";
 import { CategoryTooltip } from "@/components/CategoryTooltip";
 import { CriteriaRanking } from "@/components/CriteriaRanking";
@@ -19,70 +19,32 @@ const DEFAULT_RANKING: CriterionKey[] = [
   "dogImportEase",
 ];
 
+function readList(raw: string | null): string[] {
+  try {
+    const list: unknown = JSON.parse(raw ?? "[]");
+    return Array.isArray(list) && list.every(item => typeof item === "string") ? list : [];
+  } catch {
+    return [];
+  }
+}
+
+function salaryValue(raw: string | null) {
+  const value = Number(raw ?? BASELINE_SALARY);
+  return Number.isFinite(value) && value <= Number.MAX_SAFE_INTEGER ? Math.max(0, value) : BASELINE_SALARY;
+}
+
 export default function Home() {
-  const [criteriaOrder, setCriteriaOrder] = useState<CriterionKey[]>(DEFAULT_RANKING);
-  const [cities] = useState<CityData[]>(citiesData as CityData[]);
-  const [annualSalary, setAnnualSalary] = useState(100000);
-  const [hiddenCities, setHiddenCities] = useState<Set<string>>(new Set());
-
-  // Load from localStorage on mount
-  useEffect(() => {
-    const savedOrder = localStorage.getItem("cityPickerCriteriaOrder");
-    if (savedOrder) {
-      try {
-        const parsed = JSON.parse(savedOrder);
-        setCriteriaOrder(parsed);
-      } catch (e) {
-        console.error("Failed to load saved criteria order:", e);
-      }
-    }
-
-    const savedSalary = localStorage.getItem("cityPickerSalary");
-    if (savedSalary) {
-      setAnnualSalary(Number(savedSalary));
-    }
-
-    const savedHidden = localStorage.getItem("cityPickerHiddenCities");
-    if (savedHidden) {
-      try {
-        const parsed = JSON.parse(savedHidden);
-        setHiddenCities(new Set(parsed));
-      } catch (e) {
-        console.error("Failed to load hidden cities:", e);
-      }
-    }
-  }, []);
-
-  // Save to localStorage whenever they change
-  useEffect(() => {
-    localStorage.setItem("cityPickerCriteriaOrder", JSON.stringify(criteriaOrder));
-  }, [criteriaOrder]);
-
-  useEffect(() => {
-    localStorage.setItem("cityPickerSalary", String(annualSalary));
-  }, [annualSalary]);
-
-  useEffect(() => {
-    localStorage.setItem("cityPickerHiddenCities", JSON.stringify(Array.from(hiddenCities)));
-  }, [hiddenCities]);
-
-  // Convert ranking to weights
+  const [savedOrder, saveOrder] = useStoredPreference("cityPickerCriteriaOrder");
+  const [savedSalary, saveSalary] = useStoredPreference("cityPickerSalary");
+  const [editingEmptySalary, setEditingEmptySalary] = useState(false);
+  const [savedHidden, saveHidden] = useStoredPreference("cityPickerHiddenCities");
+  const keys = readList(savedOrder);
+  const criteriaOrder = keys.length === DEFAULT_RANKING.length && DEFAULT_RANKING.every(key => keys.includes(key))
+    ? keys as CriterionKey[] : DEFAULT_RANKING;
+  const annualSalary = salaryValue(savedSalary);
+  const hiddenCities = new Set(readList(savedHidden));
   const weights = rankingToWeights(criteriaOrder);
-
-  // Recalculate cities with adjusted salary (baseline is $100k)
-  const BASELINE_SALARY = 100000;
-  const salaryMultiplier = annualSalary / BASELINE_SALARY;
-
-  const adjustedCities = cities.map(city => {
-    const adjustedAfterTaxIncome = Math.round(city.afterTaxIncome * salaryMultiplier);
-    const adjustedSavings12Month = Math.round((adjustedAfterTaxIncome - city.monthlyCost) * 12);
-
-    return {
-      ...city,
-      afterTaxIncome: adjustedAfterTaxIncome,
-      savings12Month: adjustedSavings12Month,
-    };
-  });
+  const adjustedCities = estimateCities(citiesData, annualSalary);
 
   // Sort cities: visible first (by score), then hidden at bottom (by score)
   const sortedCities = [...adjustedCities].sort((a, b) => {
@@ -98,11 +60,11 @@ export default function Home() {
   });
 
   const handleReorder = (newOrder: CriterionKey[]) => {
-    setCriteriaOrder(newOrder);
+    saveOrder(JSON.stringify(newOrder));
   };
 
   const resetRanking = () => {
-    setCriteriaOrder(DEFAULT_RANKING);
+    handleReorder(DEFAULT_RANKING);
   };
 
   const toggleHideCity = (cityName: string) => {
@@ -112,7 +74,7 @@ export default function Home() {
     } else {
       newHidden.add(cityName);
     }
-    setHiddenCities(newHidden);
+    saveHidden(JSON.stringify([...newHidden]));
   };
 
   return (
@@ -130,18 +92,28 @@ export default function Home() {
         <div className="bg-white rounded-lg shadow-sm p-6">
           <div className="flex items-center gap-4">
             <label htmlFor="salary" className="text-sm font-medium text-gray-900">
-              Annual Salary (USD):
+              Annual salary (USD)
             </label>
             <input
               id="salary"
               type="number"
-              value={annualSalary}
-              onChange={(e) => setAnnualSalary(Number(e.target.value))}
-              className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent w-40"
+              value={editingEmptySalary ? "" : annualSalary}
+              onChange={e => {
+                setEditingEmptySalary(e.target.value === "");
+                saveSalary(String(salaryValue(e.target.value)));
+              }}
+              onBlur={() => setEditingEmptySalary(false)}
+              aria-describedby="salary-model"
+              className="px-4 py-2 border border-gray-300 rounded-lg text-gray-900 focus:ring-2 focus:ring-blue-500 focus:border-transparent w-40"
               min="0"
               step="1000"
             />
           </div>
+          <p id="salary-model" className="mt-3 text-sm text-gray-600">
+            Each city’s monthly take-home estimate scales in proportion to your salary from the original
+            $100,000 scenario. Subtract monthly costs from take-home and multiply by 12 to estimate annual savings.
+            Costs are the estimates recorded in November 2025 for two adults and a small dog.
+          </p>
         </div>
 
         {/* Criteria Ranking */}
@@ -156,6 +128,11 @@ export default function Home() {
             </button>
           </div>
           <CriteriaRanking orderedKeys={criteriaOrder} onReorder={handleReorder} />
+          <p className="mt-3 text-sm text-gray-600">
+            Savings compares all {citiesData.length} cities at your salary, including hidden cities.
+            The lowest annual balance earns 1/10 and the highest earns 10/10. Each dollar between them
+            adds the same amount to the grade. When all cities run a shortfall, the smallest shortfall scores highest.
+          </p>
         </div>
 
         {/* Cities Table */}
@@ -171,7 +148,7 @@ export default function Home() {
                     City
                   </th>
                   <th className="px-4 py-3 text-left font-semibold text-gray-900">
-                    Overall Score
+                    Overall Score /100
                   </th>
                   {CRITERIA_CONFIG.map((config) => (
                     <th key={config.key} className="px-4 py-3 text-left font-semibold text-gray-900">

@@ -3,6 +3,12 @@
 import { CityData } from "@/types/city";
 import { ReactNode } from "react";
 
+const dollars = new Intl.NumberFormat("en-US", {
+  style: "currency",
+  currency: "USD",
+  maximumFractionDigits: 0,
+});
+
 export type CriterionKey =
   | "savings"
   | "timezoneOverlap"
@@ -26,24 +32,21 @@ export const CRITERIA_CONFIG: CriterionConfig[] = [
     key: "savings",
     label: "Savings",
     colorClass: "bg-gray-100 text-gray-700",
-    getValue: (city) => city.savings,
+    getValue: (city) => ({
+      ...city.savings,
+      notes: `Original $100,000 scenario, recorded November 2025. ${city.savings.notes}`,
+    }),
     renderExtra: (city) => (
       <>
-        <div className="flex items-center gap-2">
-          <span className="text-green-700 font-medium text-xs">
-            ${city.afterTaxIncome.toLocaleString()}
-          </span>
-        </div>
-        <div className="flex items-center gap-2">
-          <span className="text-red-600 text-xs">
-            ${city.monthlyCost.toLocaleString()}
-          </span>
-        </div>
-        <div className="flex items-center gap-2">
-          <span className="text-blue-700 font-semibold text-xs">
-            ${city.savings12Month.toLocaleString()}/yr
-          </span>
-        </div>
+        <span className="text-green-700 font-medium text-xs">
+          {dollars.format(city.afterTaxIncome)}/mo take-home
+        </span>
+        <span className="text-gray-600 text-xs">
+          {dollars.format(city.monthlyCost)}/mo cost
+        </span>
+        <span className={`font-semibold text-xs ${city.savings12Month < 0 ? "text-red-700" : "text-blue-700"}`}>
+          {dollars.format(city.savings12Month)}/yr {city.savings12Month < 0 ? "shortfall" : "savings"}
+        </span>
       </>
     ),
   },

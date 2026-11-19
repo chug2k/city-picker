@@ -9,43 +9,48 @@ interface CategoryTooltipProps {
 }
 
 export function CategoryTooltip({ notes, sources, children }: CategoryTooltipProps) {
-  const [isVisible, setIsVisible] = useState(false);
+  const [position, setPosition] = useState<{ top: number; left: number } | null>(null);
   const tooltipRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (tooltipRef.current && !tooltipRef.current.contains(event.target as Node)) {
-        setIsVisible(false);
+        setPosition(null);
       }
     };
 
-    if (isVisible) {
+    if (position) {
       document.addEventListener("mousedown", handleClickOutside);
     }
 
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [isVisible]);
+  }, [position]);
 
   return (
     <div
       ref={tooltipRef}
       className="relative inline-block"
     >
-      <div
+      <button
+        type="button"
+        aria-expanded={position !== null}
         onClick={(e) => {
           e.stopPropagation();
-          setIsVisible(!isVisible);
+          const rect = e.currentTarget.getBoundingClientRect();
+          setPosition(position ? null : {
+            top: rect.top - 10,
+            left: Math.max(4, Math.min(rect.left, window.innerWidth - 340)),
+          });
         }}
       >
         {children}
-      </div>
-      {isVisible && (
+      </button>
+      {position && (
         <div className="fixed z-[100] w-80 p-4 bg-gray-900 text-white text-xs rounded-lg shadow-xl"
           style={{
-            top: tooltipRef.current ? `${tooltipRef.current.getBoundingClientRect().top - 10}px` : '0',
-            left: tooltipRef.current ? `${Math.min(tooltipRef.current.getBoundingClientRect().left, window.innerWidth - 340)}px` : '0',
+            ...position,
             transform: 'translateY(-100%)',
           }}
         >

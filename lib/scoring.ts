@@ -1,4 +1,22 @@
-import { CityData, ScoringWeights } from "@/types/city";
+import type { CityData, ScoringWeights } from "@/types/city";
+
+export const BASELINE_SALARY = 100_000;
+
+export function estimateCities(cities: CityData[], salary: number): CityData[] {
+  const estimates = cities.map(city => {
+    const afterTaxIncome = Math.round(city.afterTaxIncome * (salary / BASELINE_SALARY));
+    return { ...city, afterTaxIncome, savings12Month: 12 * (afterTaxIncome - city.monthlyCost) };
+  });
+  const balances = estimates.map(city => city.savings12Month);
+  const lowest = Math.min(...balances);
+  const highest = Math.max(...balances);
+
+  return estimates.map(city => {
+    // Equal balances share the midpoint when there is no spread to compare.
+    const grade = highest === lowest ? 5.5 : 1 + 9 * (city.savings12Month - lowest) / (highest - lowest);
+    return { ...city, savings: { ...city.savings, score: Math.round(grade * 10) / 10 } };
+  });
+}
 
 /**
  * Calculate overall weighted score for a city
@@ -17,8 +35,8 @@ export function calculateOverallScore(
     city.dogImportEase.score * weights.dogImportEase +
     city.veganFriendliness.score * weights.veganFriendliness;
 
-  // Score is already weighted (weights sum to 1.0), multiply by 10 to get 0-10 scale
-  return Math.round(score * 10 * 10) / 10; // Round to 1 decimal place
+  // Display the weighted average of the ten-point grades on a 100-point scale.
+  return Math.round(score * 100) / 10;
 }
 
 /**

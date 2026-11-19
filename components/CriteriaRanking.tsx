@@ -52,7 +52,8 @@ export function CriteriaRanking({ orderedKeys, onReorder }: CriteriaRankingProps
   return (
     <div className="space-y-2">
       <div className="text-sm text-gray-600 mb-3">
-        Drag to reorder by importance (top = most important)
+        Drag to put your highest priority first. Each position carries twice the weight of the one below.
+        The weighted average of the eight grades gives the overall score out of 100.
       </div>
       {orderedKeys.map((key, index) => (
         <div

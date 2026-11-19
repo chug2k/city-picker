@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# City Picker
 
-## Getting Started
+Compare 17 cities for remote work. Enter an annual salary in USD and drag the eight priorities into your preferred order. The browser remembers your salary, priority order and hidden cities.
 
-First, run the development server:
+## How the estimates work
 
-```bash
+The city records were committed on November 9, 2025. Their monthly costs cover two adults and a small dog. Click a savings grade to see the original note and source links.
+
+Each city has its own assumed monthly take-home in the original $100,000 salary scenario. Entering half that salary halves the assumed take-home in every city. The app rounds monthly take-home to the nearest dollar, subtracts that city’s monthly costs, and multiplies by 12. The result is an estimated annual surplus or shortfall. These are historical scenario assumptions. For example, Austin’s reference take-home is $12,000 per month.
+
+The smallest annual balance across the 17 cities gets a savings grade of 1 and the largest gets 10. Grades between them increase linearly with the dollar balance and are rounded to one decimal. If every balance is equal the common grade is 5.5. At zero income a better grade means a smaller shortfall. Hidden cities still count in this comparison.
+
+Each priority weighs twice as much as the next (128, 64, 32, 16, 8, 4, 2, 1 shares out of 255). The weighted average of the eight grades is multiplied by 10 for the overall score out of 100. Tied scores keep the dataset order. Hidden cities appear at the bottom.
+
+## Run and check
+
+Use Node.js 20.9 or later.
+
+```sh
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000/. To exercise the salary field, drag ordering, source notes, shortfalls and reloads in a fresh browser, run the following commands.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```sh
+npx playwright install chromium
+npm test
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The tests start a local server. Set `CITY_PICKER_URL` to a running site's full entry URL, including its trailing slash, to test a deployed copy. `npm run lint` and `npm run build` check the source and production build.
