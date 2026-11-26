@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useSyncExternalStore } from "react";
 import { BASELINE_SALARY, calculateOverallScore, estimateCities } from "@/lib/scoring";
 import { useStoredPreference } from "@/lib/use-stored-preference";
 import citiesData from "@/data/cities.json";
@@ -19,6 +19,8 @@ const DEFAULT_RANKING: CriterionKey[] = [
   "dogImportEase",
 ];
 
+const subscribeToHydration = () => () => {};
+
 function readList(raw: string | null): string[] {
   try {
     const list: unknown = JSON.parse(raw ?? "[]");
@@ -34,6 +36,8 @@ function salaryValue(raw: string | null) {
 }
 
 export default function Home() {
+  // The static export can paint before React is ready to save a visitor's first edit.
+  const interactive = useSyncExternalStore(subscribeToHydration, () => true, () => false);
   const [savedOrder, saveOrder] = useStoredPreference("cityPickerCriteriaOrder");
   const [savedSalary, saveSalary] = useStoredPreference("cityPickerSalary");
   const [editingEmptySalary, setEditingEmptySalary] = useState(false);
@@ -97,6 +101,7 @@ export default function Home() {
             <input
               id="salary"
               type="number"
+              disabled={!interactive}
               value={editingEmptySalary ? "" : annualSalary}
               onChange={e => {
                 setEditingEmptySalary(e.target.value === "");
@@ -122,12 +127,13 @@ export default function Home() {
             <h2 className="text-xl font-semibold text-gray-900">Rank Criteria by Importance</h2>
             <button
               onClick={resetRanking}
+              disabled={!interactive}
               className="text-sm text-blue-600 hover:text-blue-700 font-medium"
             >
               Reset to Defaults
             </button>
           </div>
-          <CriteriaRanking orderedKeys={criteriaOrder} onReorder={handleReorder} />
+          <CriteriaRanking orderedKeys={criteriaOrder} onReorder={handleReorder} interactive={interactive} />
           <p className="mt-3 text-sm text-gray-600">
             Savings compares all {citiesData.length} cities at your salary, including hidden cities.
             The lowest annual balance earns 1/10 and the highest earns 10/10. Each dollar between them

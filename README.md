@@ -2,7 +2,7 @@
 
 [Open City Picker](https://clpanic.com/city-picker/)
 
-Compare 17 cities for remote work. Enter an annual salary in USD and drag the eight priorities into your preferred order. The browser remembers your salary, priority order and hidden cities.
+Compare 17 cities for remote work. Enter an annual salary in USD and use the up and down buttons or drag the eight priorities into your preferred order. The browser remembers your salary, priority order and hidden cities.
 
 ## How the estimates work
 
